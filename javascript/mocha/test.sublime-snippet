@@ -1,0 +1,19 @@
+<snippet>
+    <content><![CDATA[
+describe('${1:${TM_FILENAME/(\w)(?:tests?)?\.js/$1/i}}', () => {
+    beforeEach(() => {});
+    afterEach(() => {});
+
+    describe('${2:ctor}', () => {
+        it('should ${3}', () => {
+            expect(false).to.be.true;
+        });
+    });
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>test</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>Mocha test file</description>
+</snippet>
